@@ -27,16 +27,16 @@ public class TestAll {
    }
    
    @Test
-   public void testMax()
+   public void testProduct()
    {
-      int m = Main.findMax(a);
-      assertEquals(m, 9);     
+      int m = Main.product(a, a.length - 1);
+      assertEquals(m, 5*8*1*5*9*2);     
    }
    
    @Test
-   public void testMin()
+   public void testAvg()
    {
-      int m = Main.findMin(a);
-      assertEquals(m, 1);     
+      double m = Main.average(a, a.length - 1);
+      assertEquals(m, (5+8+1+5+9+2) / 6.0);
    }
 }
